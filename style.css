@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;1,800&display=swap');
+
+:root {
+
+    /* color of box */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* color of background card */
+
+    --light-state-blue:hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+    /* color of circle */
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* other */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: inherit;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    max-width: 580px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    box-shadow: 5px 15px 10px hsl(221, 100%, 96%);
+}
+
+.boxs {
+    padding: 2rem 2rem;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.result {
+    background: linear-gradient(var(--light-state-blue), var(--light-royal-blue));
+    border-radius: 2rem;
+}
+
+.result-title {
+    color: var(--light-lavender);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.result-scored {
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    border: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 1.5rem auto;
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+h2 {
+    color:var(--white);
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--light-lavender);
+}
+
+.summary-title {
+    text-align: left;
+    color: var(--dark-gray-blue);
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.summary-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.item-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+span {
+    color: var(--dark-gray-blue);
+    font-weight: 700;
+}
+
+.summary-btn {
+    width: 100%;
+    background: var(--dark-gray-blue);
+    color: var(--white);
+    height: 45px;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.summary-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(var(--light-state-blue), var(--light-royal-blue));
+}
+
+.text-item-red {
+    color: var(--light-red);
+}
+
+.text-item-yellow {
+    color: var(--orangey-yellow);
+}
+
+.text-item-green {
+    color: var(--green-teal);
+}
+
+.text-item-blue {
+    color: var(--Cobalt-blue);
+}
+
+.bg-item-red {
+    background-color: hsl(0, 100%, 98%);
+}
+
+.bg-item-yellow {
+    background-color: hsl(39, 100%, 98%);
+}
+
+.bg-item-green {
+    background-color: hsl(166, 100%, 98%);
+}
+
+.bg-item-blue {
+    background-color: hsl(234, 85%, 98%);
+}
+
+.dark-blue-alpha {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+@media screen and (max-width: 376px) {
+   .card {
+    display: block;
+    border-radius: 0;
+   }
+   .result {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+   }
+  }
